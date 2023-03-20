@@ -21,14 +21,35 @@
 
         imc = p / Math.pow(a,2);
 
-        if (imc < 30)
+        if (imc < 18.5)
         {
-            console.log(n,i,imc, "ABAIXO DE 30");
+            console.log(n,i,imc, "ABAIXO DO PESO NORMAL");
         }
 
-        if (imc > 30)
+        if (imc > 18.5 && imc < 24.9)
         {
-            console.log(n,i,imc, "ACIMA DE 30");
+            console.log(n,i,imc, "PESO NORMAL");
         }
+
+        if (imc > 25 && imc < 29.9)
+        {
+            console.log(n,i,imc, "EXCESSO DE PESO");
+        }
+
+        if (imc > 30 && imc < 34.9)
+        {
+            console.log(n,i,imc, "OBESIDADE CLASSE I");
+        }
+
+        if (imc > 35 && imc < 39.9)
+        {
+            console.log(n,i,imc, "OBESIDADE GRAU II");
+        }
+
+        if (imc >= 40)
+        {
+            console.log(n,i,imc, "OBESIDADE GRAU III");
+        }
+
     }
 </script>
