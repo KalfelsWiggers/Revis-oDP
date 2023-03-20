@@ -1,0 +1,31 @@
+<script>
+    for (x=1;x<=5;x++)
+    {
+        //VAMOS PEDIR O NOME DO USUÁRIO:
+        n = prompt("DIGITE SEU NOME:");
+        
+        //VAMOS PEDIR A IDADE DO USUÁRIO:
+        i = prompt("DIGITE SUA IDADE:");
+        i = parseInt(i);
+    
+        //VAMOS PEDIR O PESO DO USUÁRIO:
+        p = prompt("INFORME SEU PESO:");
+        p = parseFloat(p);
+
+        //VAMOS PEDIR A ALTURA DO USUÁRIO:
+        a = prompt("INFORME SUA ALTURA");
+        a = parseFloat(a);
+
+        imc = p / Math.pow(a,2);
+
+        if (imc < 30)
+        {
+            console.log(n,i,imc, "ABAIXO DE 30");
+        }
+
+        if (imc > 30)
+        {
+            console.log(n,i,imc, "ACIMA DE 30");
+        }
+    }
+</script>
